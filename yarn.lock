@@ -10661,6 +10661,11 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
+tyger-avatar@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/tyger-avatar/-/tyger-avatar-1.0.4.tgz#5f638a0766541e3012d89b3ea615c8fc0ae7551d"
+  integrity sha512-hn/la9hNnPumoBvt2WsXHQfJ2imOi/iphtLrAQaY8DP1Nn2+C61DCVGTIVntVYrJi8gPzi48CtgxICMyZNeprw==
+
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.4.0.tgz#07b8203bfa7056c0657050e3ccd2c37730bab8f1"
