@@ -1,4 +1,6 @@
 import React from 'react';
+import Logo from '../Logo/Logo';
+import './Avatars.styles.css';
 import {
 	TrChelsea,
 	TrEric,
@@ -11,7 +13,6 @@ import {
 	TrShamila,
 	TrRachel,
 } from 'tyger-avatar';
-import './App.css';
 
 const avatars = [
 	{ component: <TrChelsea />, name: 'TrChelsea' },
@@ -31,30 +32,33 @@ interface IAvatar {
 	name: string;
 }
 
-const App = () => {
+const Avatars = () => {
 	const handleClick = (name: string) => {
 		console.log(`${name} was clicked`);
 	};
 
 	return (
 		<div className="container">
-			{avatars.map(({ name, component }: IAvatar) => {
-				const avatar = React.cloneElement(component, {
-					width: 140,
-					title: name,
-					id: `tyger${name}`,
-					onClick: () => handleClick(name),
-				});
+			<Logo />
+			<div className="avatar-list">
+				{avatars.map(({ name, component }: IAvatar) => {
+					const avatar = React.cloneElement(component, {
+						title: name,
+						id: `tyger${name}`,
 
-				return (
-					<div key={name}>
-						<div className="avatar-item">{avatar}</div>
-						<p>{name}</p>
-					</div>
-				);
-			})}
+						onClick: () => handleClick(name),
+					});
+
+					return (
+						<div key={name}>
+							<div className="avatar-item">{avatar}</div>
+							<p>{name}</p>
+						</div>
+					);
+				})}
+			</div>
 		</div>
 	);
 };
 
-export default App;
+export default Avatars;
