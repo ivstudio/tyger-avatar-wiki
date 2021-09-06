@@ -40,7 +40,7 @@ interface IAvatar {
 
 const Avatars = () => {
 	const handleClick = (name: string) => {
-		console.log(`${name} was clicked`);
+		console.log(`${name} was clicked!`);
 	};
 
 	return (
