@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tyger-avatar-wiki/static/css/main.4f9d7859.chunk.css",
-    "main.js": "/tyger-avatar-wiki/static/js/main.735a9b5d.chunk.js",
-    "main.js.map": "/tyger-avatar-wiki/static/js/main.735a9b5d.chunk.js.map",
+    "main.js": "/tyger-avatar-wiki/static/js/main.ef126878.chunk.js",
+    "main.js.map": "/tyger-avatar-wiki/static/js/main.ef126878.chunk.js.map",
     "runtime-main.js": "/tyger-avatar-wiki/static/js/runtime-main.5f6c9257.js",
     "runtime-main.js.map": "/tyger-avatar-wiki/static/js/runtime-main.5f6c9257.js.map",
     "static/js/2.9bea91ac.chunk.js": "/tyger-avatar-wiki/static/js/2.9bea91ac.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.5f6c9257.js",
     "static/js/2.9bea91ac.chunk.js",
     "static/css/main.4f9d7859.chunk.css",
-    "static/js/main.735a9b5d.chunk.js"
+    "static/js/main.ef126878.chunk.js"
   ]
 }
