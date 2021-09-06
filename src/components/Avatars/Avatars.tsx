@@ -12,6 +12,9 @@ import {
 	TrMaria,
 	TrShamila,
 	TrRachel,
+	TrAlex,
+	TrEnrique,
+	TrFelix,
 } from 'tyger-avatar';
 
 const avatars = [
@@ -25,6 +28,9 @@ const avatars = [
 	{ component: <TrImran />, name: 'TrImran' },
 	{ component: <TrMaria />, name: 'TrMaria' },
 	{ component: <TrTorsten />, name: 'TrTorsten' },
+	{ component: <TrAlex />, name: 'TrAlex' },
+	{ component: <TrEnrique />, name: 'TrEnrique' },
+	{ component: <TrFelix />, name: 'TrFelix' },
 ];
 
 interface IAvatar {
@@ -45,7 +51,6 @@ const Avatars = () => {
 					const avatar = React.cloneElement(component, {
 						title: name,
 						id: `tyger${name}`,
-
 						onClick: () => handleClick(name),
 					});
 

@@ -22,9 +22,15 @@
 	}
 }
 
+@media screen and (min-width: 1200px) {
+	.avatar-list {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
 @media screen and (min-width: 1080px) {
 	.avatar-list {
-		max-width: 720px;
+		max-width: 1200px;
 	}
 }
 
