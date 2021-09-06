@@ -15,14 +15,18 @@ import {
 	TrAlex,
 	TrEnrique,
 	TrFelix,
+	TrSophia,
+	TrHarry,
+	TrHelen,
 } from 'tyger-avatar';
 
 const avatars = [
 	{ component: <TrChelsea />, name: 'TrChelsea' },
-	{ component: <TrEric />, name: 'TrEric' },
+	{ component: <TrFelix />, name: 'TrFelix' },
+	{ component: <TrShamila />, name: 'TrShamila' },
 	{ component: <TrSamantha />, name: 'TrSamantha' },
 	{ component: <TrRachel />, name: 'TrRachel' },
-	{ component: <TrShamila />, name: 'TrShamila' },
+	{ component: <TrEric />, name: 'TrEric' },
 	{ component: <TrIggy />, name: 'TrIggy' },
 	{ component: <TrFranklin />, name: 'TrFranklin' },
 	{ component: <TrImran />, name: 'TrImran' },
@@ -30,7 +34,9 @@ const avatars = [
 	{ component: <TrTorsten />, name: 'TrTorsten' },
 	{ component: <TrAlex />, name: 'TrAlex' },
 	{ component: <TrEnrique />, name: 'TrEnrique' },
-	{ component: <TrFelix />, name: 'TrFelix' },
+	{ component: <TrSophia />, name: 'TrSophia' },
+	{ component: <TrHelen />, name: 'TrHelen' },
+	{ component: <TrHarry />, name: 'TrHarry' },
 ];
 
 interface IAvatar {
