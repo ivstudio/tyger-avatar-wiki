@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/tyger-avatar-wiki/static/css/main.4f9d7859.chunk.css",
-    "main.js": "/tyger-avatar-wiki/static/js/main.a6c269f1.chunk.js",
-    "main.js.map": "/tyger-avatar-wiki/static/js/main.a6c269f1.chunk.js.map",
+    "main.js": "/tyger-avatar-wiki/static/js/main.657498f7.chunk.js",
+    "main.js.map": "/tyger-avatar-wiki/static/js/main.657498f7.chunk.js.map",
     "runtime-main.js": "/tyger-avatar-wiki/static/js/runtime-main.5f6c9257.js",
     "runtime-main.js.map": "/tyger-avatar-wiki/static/js/runtime-main.5f6c9257.js.map",
-    "static/js/2.12f748ef.chunk.js": "/tyger-avatar-wiki/static/js/2.12f748ef.chunk.js",
-    "static/js/2.12f748ef.chunk.js.map": "/tyger-avatar-wiki/static/js/2.12f748ef.chunk.js.map",
+    "static/js/2.58d06deb.chunk.js": "/tyger-avatar-wiki/static/js/2.58d06deb.chunk.js",
+    "static/js/2.58d06deb.chunk.js.map": "/tyger-avatar-wiki/static/js/2.58d06deb.chunk.js.map",
     "static/js/3.c9ef8404.chunk.js": "/tyger-avatar-wiki/static/js/3.c9ef8404.chunk.js",
     "static/js/3.c9ef8404.chunk.js.map": "/tyger-avatar-wiki/static/js/3.c9ef8404.chunk.js.map",
     "index.html": "/tyger-avatar-wiki/index.html",
     "static/css/main.4f9d7859.chunk.css.map": "/tyger-avatar-wiki/static/css/main.4f9d7859.chunk.css.map",
-    "static/js/2.12f748ef.chunk.js.LICENSE.txt": "/tyger-avatar-wiki/static/js/2.12f748ef.chunk.js.LICENSE.txt"
+    "static/js/2.58d06deb.chunk.js.LICENSE.txt": "/tyger-avatar-wiki/static/js/2.58d06deb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5f6c9257.js",
-    "static/js/2.12f748ef.chunk.js",
+    "static/js/2.58d06deb.chunk.js",
     "static/css/main.4f9d7859.chunk.css",
-    "static/js/main.a6c269f1.chunk.js"
+    "static/js/main.657498f7.chunk.js"
   ]
 }
