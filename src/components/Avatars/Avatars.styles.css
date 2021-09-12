@@ -7,18 +7,25 @@
 
 .avatar-list {
 	text-align: center;
-	max-width: 420px;
+	max-width: 100%;
 	margin: 0 auto 120px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 	gap: 20px;
 	padding: 0 20px;
 }
 
 @media screen and (min-width: 720px) {
 	.avatar-list {
-		max-width: 720px;
+		max-width: 820px;
+		grid-template-columns: 1fr 1fr;
 		padding: 0;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	.avatar-list {
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 
@@ -36,14 +43,13 @@
 
 .avatar-item {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
-	background-color: #eaeaea;
-	border-radius: 50%;
-	overflow: hidden;
-	width: 90px;
-	height: 90px;
-	margin: 0 auto;
+}
+
+code.language-jsx {
+	font-size: 12px;
 }
 
 @media screen and (min-width: 720px) {
@@ -51,9 +57,4 @@
 		width: 200px;
 		height: 200px;
 	}
-}
-
-.avatar-item > svg {
-	width: 90%;
-	height: 90%;
 }

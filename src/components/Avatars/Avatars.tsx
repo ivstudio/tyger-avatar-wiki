@@ -1,80 +1,49 @@
 import React from 'react';
 import Logo from '../Logo/Logo';
 import './Avatars.styles.css';
-import {
-	TrChelsea,
-	TrEric,
-	TrSamantha,
-	TrTorsten,
-	TrIggy,
-	TrFranklin,
-	TrImran,
-	TrMaria,
-	TrShamila,
-	TrRachel,
-	TrAlex,
-	TrEnrique,
-	TrFelix,
-	TrSophia,
-	TrHarry,
-	TrHelen,
-	TrStu,
-	TrCathy,
-	TrChad,
-	TrNancy,
-} from 'tyger-avatar';
+import TygerAvatar from 'tyger-avatar';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+SyntaxHighlighter.registerLanguage('jsx', jsx);
 
 const avatars = [
-	{ component: <TrChelsea />, name: 'TrChelsea' },
-	{ component: <TrFelix />, name: 'TrFelix' },
-	{ component: <TrShamila />, name: 'TrShamila' },
-	{ component: <TrHelen />, name: 'TrHelen' },
-	{ component: <TrRachel />, name: 'TrRachel' },
-	{ component: <TrImran />, name: 'TrImran' },
-	{ component: <TrIggy />, name: 'TrIggy' },
-	{ component: <TrFranklin />, name: 'TrFranklin' },
-	{ component: <TrEric />, name: 'TrEric' },
-	{ component: <TrCathy />, name: 'TrCathy' },
-	{ component: <TrSamantha />, name: 'TrSamantha' },
-	{ component: <TrAlex />, name: 'TrAlex' },
-	{ component: <TrEnrique />, name: 'TrEnrique' },
-	{ component: <TrSophia />, name: 'TrSophia' },
-	{ component: <TrChad />, name: 'TrChad' },
-	{ component: <TrHarry />, name: 'TrHarry' },
-	{ component: <TrMaria />, name: 'TrMaria' },
-	{ component: <TrNancy />, name: 'TrNancy' },
-	{ component: <TrTorsten />, name: 'TrTorsten' },
-	{ component: <TrStu />, name: 'TrStu' },
+	'TrChelsea',
+	'TrFelix',
+	'TrImran',
+	'TrAlex',
+	'TrShamila',
+	'TrCathy',
+	'TrEric',
+	'TrSamantha',
+	'TrNancy',
+	'TrHarry',
+	'TrTorsten',
+	'TrIggy',
+	'TrFranklin',
+	'TrMaria',
+	'TrRachel',
+	'TrEnrique',
+	'TrSophia',
+	'TrHelen',
+	'TrStu',
+	'TrChad',
 ];
 
-interface IAvatar {
-	component: JSX.Element;
-	name: string;
-}
-
 const Avatars = () => {
-	const handleClick = (name: string) => {
-		console.log(`${name} was clicked`);
-	};
-
+	const codeString = (item: any) => `<TygerAvatar name={${item}}/>`;
 	return (
 		<div className="container">
 			<Logo />
 			<div className="avatar-list">
-				{avatars.map(({ name, component }: IAvatar) => {
-					const avatar = React.cloneElement(component, {
-						title: name,
-						id: `tyger${name}`,
-						onClick: () => handleClick(name),
-					});
-
-					return (
-						<div key={name}>
-							<div className="avatar-item">{avatar}</div>
-							<p>{name}</p>
-						</div>
-					);
-				})}
+				{avatars.map((item: any) => (
+					<div>
+						<TygerAvatar name={item} size="xlg" />
+						<SyntaxHighlighter language="jsx" style={dracula}>
+							{codeString(item)}
+						</SyntaxHighlighter>
+					</div>
+				))}
 			</div>
 		</div>
 	);
